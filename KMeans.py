@@ -38,7 +38,12 @@ class KMeans:
         for _ in range(self.nIters):
             # 2. 分配数据点到最近的簇   
             # ** (6,2) -> (6,1,2) - (2,2) >>> (6,2,2)
-            dists = np.linalg.norm(self.data[:, np.newaxis]-centers, axis=2)
+            # dists = np.linalg.norm(self.data[:, np.newaxis]-centers, axis=2)   
+            
+            dists = np.zeros(shape=(6,2)) 
+            dists[:, 0] = np.linalg.norm(self.data - centers[0,:], axis = 1) 
+            dists[:, 1] = np.linalg.norm(self.data - centers[1,:], axis = 1)
+             
             labels = np.argmax(dists, axis=1) # 确定每个数据点的簇标签 
             
             # 3. 重新计算簇中心 
