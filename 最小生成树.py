@@ -65,7 +65,7 @@ class Kruscal:
     #     self.tree[self.Find(i)] = self.tree[j]  
     
     # def Union(self, i, j): 
-    #     """
+    #     """   
     #     并查集合并
     #     将i合并到j
     #     """

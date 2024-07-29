@@ -26,4 +26,17 @@
     一个case: 7.33,9.00;1.17,1.47 
     ```
     print(";".join([",".join(["{:.2f}".format(i) for i in pts]) for pts in centers]))
-    ``` 
+    ```  
+
+## 2. 保留小数问题  
+### 2.1 保留两位小数且不进位  
+```
+def get_floor(val):
+    return "{:.2f}".format(np.floor(val*100)/100)
+```  
+
+### 2.2 保留两位小数且进位  
+```
+def get_ceil(val): 
+    return "{:.2f}".format(np.ceil(val*100)/100)
+```
