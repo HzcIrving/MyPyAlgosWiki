@@ -50,6 +50,10 @@ https://zhuanlan.zhihu.com/p/93647900
     # 最小生成树 -> 基于并查集方法生成（Kruscal) 
 """   
 
+print("Kruscal算法!!") 
+print("Kruscal算法!!")  
+print("Kruscal算法!!")  
+
 class Kruscal:
     def __init__(self, tree) -> None:
         self.tree = tree 
