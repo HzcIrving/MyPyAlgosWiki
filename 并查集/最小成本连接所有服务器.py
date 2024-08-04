@@ -69,10 +69,14 @@ def func():
             res += cost 
     
     # 检查 是否只有一个root 
+    # 因为最后的root_for_each_node一定全是相同的 ... 
     check_flag = find(0) 
     for i in range(1, n): 
         if (check_flag != find(i)): 
             return -1     
+    
+    print(res)
+    return res 
 
     
 if __name__ == "__main__":

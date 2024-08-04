@@ -1,4 +1,5 @@
 """ 
+[√]
 Leetcode 743 Dijkstra算法 
 ---------------------------- 
 https://leetcode.cn/problems/network-delay-time/  

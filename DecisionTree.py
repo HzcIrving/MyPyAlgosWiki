@@ -68,7 +68,7 @@ def compute_HD(X,Y):
     log_counts = np.log2(counts)
     print(log_counts) 
     
-    # multiply是element-wise的乘法  
+    # multiply是element-wise的乘法  等价于"*"
     H_D = np.multiply(counts, log_counts)
     print(H_D)
     

@@ -38,17 +38,14 @@ class KNN:
         
         # 获取k个最近邻居的标签 
         k_nearest_labels = [self.label[i] for i in k_indices]  
-        
-        # 返回数量最多的类别作为这批预测的结果  
-        # results = OrderedDict() 
-        # for res in k_nearest_labels: l
-        #     if res not in results.keys():
-        #         results.setdefault(res, 1)  
-        #     else:
-        #         results[res] += 1     
-        
+        print(k_nearest_labels)
+           
         # 投票  
-        res = Counter(k_nearest_labels).most_common(1)  
+        # 返回1个结果(top1) ---> (value, nums)
+        res = Counter(k_nearest_labels).most_common(1)    
+        # 返回2个结果(top2)
+        res = Counter(k_nearest_labels).most_common(2) 
+        print(res)
         
         return res[0][0]
 

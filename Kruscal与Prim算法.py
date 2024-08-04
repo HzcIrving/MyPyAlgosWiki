@@ -2,10 +2,11 @@
 Kruscal (贪心 + 并查集)  https://www.bilibili.com/video/BV1yK4y1f7YK/?spm_id_from=333.337.search-card.all.click&vd_source=6c24fa112801abdbc5741fa1a55aea2d 
 - https://blog.csdn.net/Floatiy/article/details/79424763 
 - https://www.cnblogs.com/unique-pursuit/p/16059734.html 
+[√] 并查集
 
 """
 
-class Kruskal:  
+class Kruskal:   
     """ 
     Kruskal算法是一种用来寻找加权无向图中最小生成树的算法。为了通俗地解释这个概念，我们可以用一个生活中的例子来说明：
     想象一下，你是一个城市规划师，需要在一系列村庄之间修建道路，使得所有村庄都通过道路相连，并且总的道路修建成本最低。

@@ -1,6 +1,7 @@
 import numpy as np 
 
-""" 
+"""  
+[√]
 KMeans PCode 
 -------------------- 
 1.目标  
@@ -71,4 +72,5 @@ if __name__ == "__main__":
     #for pts in centers: 
         # print(",".join(map(str, [1,2]))) 
         # print(",".join(["{:.2f}".format(i) for i in pts]))  
+    print(centers)
     print(";".join([",".join(["{:.2f}".format(i) for i in pts]) for pts in centers]))
